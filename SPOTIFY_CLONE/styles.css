@@ -1,0 +1,404 @@
+:root{
+    --black : #000;
+    --white : #fff;
+    --ligth-grey : lightgrey;
+    --grey : #121212;
+}
+
+.container{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    font-family: "Montserrat", sans-serif;
+}
+
+.sidebar{
+    flex:0.3;
+    height: 85vh;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content{
+    flex: 0.7;
+    height: 85vh;
+    margin-top: 1rem;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: var(--grey);
+}
+
+
+
+.home{
+  flex: 1;
+  width: 100%;
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.library{
+   flex: 5;
+   width: 100%;
+   background-color: var(--grey);
+   border-radius: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   overflow: hidden;
+}
+
+.link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin-left:1.5rem ;
+}
+
+
+
+.icons{
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #fff;
+}
+
+a{
+    color: grey;
+    font-size:1.25rem ;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover{
+    color : var(--white) ;
+}
+
+
+.library1{
+  flex: 1;
+}
+
+.library2{
+   flex: 5;
+   overflow-y: scroll;
+}
+.library-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+.library-icon{
+    display: flex;
+    gap: 0.8rem;
+    padding: 1.25rem;
+}
+
+.PAA{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.library-link{
+    width:5rem ;
+    height: 2rem;
+    margin: 0.8rem;
+    border-radius: 0.8rem;
+    background: rgba(183, 184, 183, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--white);
+    margin: 0;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem 1.5rem;
+}
+
+.library-list{
+    padding: 1.5rem;
+}
+
+.playlist{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 3 rem;
+    gap: 1rem;
+    margin: 1rem;
+
+}
+
+
+
+.playlist-image{
+    height: 3rem;
+    width: 3rem;
+}
+
+.playlist-name{
+    line-height: 1.5;
+}
+
+
+/* Main-Content Right Side */
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    position: sticky;
+    top: 0;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    padding: 0.5rem;
+}
+
+.navbar-content-right button{
+    border-radius: 1rem;
+    padding:0.5rem  0.75rem;
+    border: none;
+}
+
+.navbar-content-right h5{
+    margin: 0;
+}
+
+.navbar-content-right button:hover{
+    width:10rem ;
+    height:2.3rem ;
+}
+
+.navbar-content-right{
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 90%;
+    padding: 1rem;
+}
+
+.card-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8%;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+
+.card-content{
+    height: 18rem;
+    width: 12rem;
+    background-color: rgba(183, 184, 183, 0.1);
+    text-align: center;
+    border-radius: 0.5rem;
+    line-height: 2;
+}
+
+.card-image{
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    border-radius: 0.5rem;
+}
+
+.card-content h5,p{
+    color: var(--white);
+    margin: 0;
+}
+ .card h2{
+    color: var(--white);
+    margin-bottom :2rem;
+ }
+
+
+
+ /* MUsic Player */
+
+ .music-player{
+    background-color: var(--black);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 13.25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-left{
+   flex: 1;
+   height: 70%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 1.5rem;
+   padding: 0.6rem;
+   padding-left: 0.8rem;
+}
+
+.song-image{
+    height: 100%;
+    width: 5rem;
+    border-radius: 0.5rem;
+}
+
+.song-description h4{
+    color: white;
+    margin: 0.25rem;
+}
+
+
+.player-center{
+    flex: 3;
+    height: 100%;
+    text-align: center;
+}
+
+.player-right{
+   flex: 1;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 1rem;
+   padding: 0.6rem;
+   padding-right: 1.5rem;
+}
+
+.player-icons{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.player-center input[type="range"]{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 5px;
+}
+
+.main-content::-webkit-scrollbar{
+    background: transparent ;
+    display: block;
+    width: 14px;
+}
+
+.main-content::-webkit-scrollbar-thumb{
+    background: grey;
+}
+
+
+.library2::-webkit-scrollbar{
+    background: transparent ;
+    display: block;
+    width: 14px;
+}
+
+.library2::-webkit-scrollbar-thumb{
+    background: grey;
+}
+
+.player-right input[type = "range"]{
+    display: inline-block;
+    height: 5px;
+}
+
+
+
+/* .....................Slider CSS ................. */
+
+timeline-slider {
+    margin: 0 10px;
+    width: 40vw;
+  }
+  
+  .volume-slider {
+    width: 100px;
+    height: 4px;
+  }
+  
+  .timeline-slider:hover,
+  .volume-slider:hover {
+    background-color: #1bd760;
+  }
+  .timeline-slider,
+  .volume-slider {
+    -webkit-appearance: none;
+  }
+  
+  .timeline-slider::-webkit-slider-runnable-track,
+  .volume-slider::-webkit-slider-runnable-track {
+    height: 4px;
+    background: #ddd;
+    border: none;
+    border-radius: 100px;
+  }
+  
+  .timeline-slider::-webkit-slider-thumb,
+  .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #1bd760;
+    margin-top: -6px;
+  }
+  
+  .timeline-slider:focus,
+  .volume-slider:focus {
+    outline: none;
+  }
+  
+  .timeline-slider:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+  }
